@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NHL Teams</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <body>
+        <main>
+            <section class="west">
+                <img src="west.png" />
+                <button class="westBtn" onClick="westFilter()">
+                    Show WC Teams
+                </button>
+            </section>
+
+            <section class="nhlTeams">
+                <div class="inputs">
+                    <button class="allBtn" onClick="allFilter()">All</button>
+                    <button class="smallWestBtn" onClick="westFilter()">
+                        WC
+                    </button>
+                    <button class="smallEastBtn" onClick="eastFilter()">
+                        EC
+                    </button>
+                    <input
+                        type="text"
+                        placeholder="Search by Team or City"
+                        name="searchBar"
+                        id="searchBar"
+                    />
+                </div>
+                <table class="container"></table>
+            </section>
+            <section class="east">
+                <img src="east.png" />
+                <button class="eastBtn" onClick="eastFilter()">
+                    Show EC Teams
+                </button>
+            </section>
+
+            <script src="app.js"></script>
+        </main>
+    </body>
+</html>
